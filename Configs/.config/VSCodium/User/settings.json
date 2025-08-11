@@ -1,21 +1,72 @@
+
 {
-  "workbench.colorTheme": "Wallbash",
-  "window.menuBarVisibility": "toggle",
-  "editor.fontSize": 12,
-  "editor.scrollbar.vertical": "hidden",
-  "editor.scrollbar.verticalScrollbarSize": 0,
-  "security.workspace.trust.untrustedFiles": "newWindow",
-  "security.workspace.trust.startupPrompt": "never",
-  "security.workspace.trust.enabled": false,
-  "editor.minimap.side": "left",
-"editor.fontFamily": "'JetbrainsMono Nerd Font','Maple Mono', monospace",
-  "extensions.autoUpdate": false,
-  "workbench.statusBar.visible": false,
-  "terminal.external.linuxExec": "kitty",
-  "terminal.explorerKind": "both",
-  "terminal.sourceControlRepositoriesKind": "both",
-  "telemetry.telemetryLevel": "off",
-  "workbench.activityBar.location": "top",
-  "window.customTitleBarVisibility": "auto",
-  "workbench.sideBar.location": "right"
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "files.autoSave": "afterDelay",
+    "git.autofetch": true,
+    "editor.fontFamily": "MesloLGS NF",
+    "editor.fontSize": 14,
+    // Тема
+    "workbench.iconTheme": "vscode-great-icons",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "workbench.tree.indent": 14,
+    // Отсчёт от курсора
+    "editor.lineNumbers": "relative",
+    // Запрашивать подтверждение на удаление Drag&Drop
+    "explorer.confirmDragAndDrop": true,
+    // Разместить sidebar
+    "workbench.sideBar.location": "left",
+    // Убрать статус бар внизу
+    "workbench.statusBar.visible": true,
+    // Убрать виджет справа для скрола
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.minimap.enabled": false,
+    "editor.matchBrackets": "never",
+    "editor.occurrencesHighlight": "off",
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.stickyScroll.enabled": false,
+    // Урать полный путь к файлу сверху
+    "breadcrumbs.enabled": false,
+    "window.density.editorTabHeight": "compact",
+    //Cursor
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "line-thin",
+    "editor.cursorSmoothCaretAnimation": "explicit",
+    // Отключаем панель управления окном
+    "chat.commandCenter.enabled": false,
+    "window.titleBarStyle": "native",
+    "window.menuBarVisibility": "toggle",
+    //
+    "workbench.productIconTheme": "material-product-icons",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 12,
+    "editor.accessibilitySupport": "off",
+    "editor.inlayHints.enabled": "on",
+    "flake8.args": [
+        "--max-line-length=120",
+        "--ignore=E402,F841,F401,E302,E305,E501",
+    ],
+    "basedpyright.analysis.typeCheckingMode": "off",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "keyboard.dispatch": "keyCode",
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "explorer.confirmDelete": false,
+    "ruff.nativeServer": "on",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "terminal.explorerKind": "external",
+    "debug.hideLauncherWhileDebugging": false,
+    "debug.allowBreakpointsEverywhere": false,
+    "debug.toolBarLocation": "docked",
+    "debugpy.showPythonInlineValues": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "workbench.activityBar.location": "top",
+    "debug.showSubSessionsInToolBar": true,
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.startupEditor": "none"
+    //
 }

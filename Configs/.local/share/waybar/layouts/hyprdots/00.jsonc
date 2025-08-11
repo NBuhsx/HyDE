@@ -1,0 +1,72 @@
+{
+    "layer": "top",
+    "output": [
+        "*"
+    ],
+    "height": 10,
+    "exclusive": true,
+    "passthrough": false,
+    "reload_style_on_change": true,
+    "include": [
+        "$XDG_CONFIG_HOME/waybar/modules/*json*",
+        "$XDG_CONFIG_HOME/waybar/includes/includes.json"
+    ],
+    "modules-left": [
+        "group/pill#left"
+    ],
+    "modules-center": [
+        "group/pill#center"
+    ],
+    "modules-right": [
+        "group/pill#right1",
+        "group/pill#right2",
+        "group/pill#right3"
+    ],
+    "group/pill#left": {
+        "modules": [
+            "hyprland/workspaces",
+            "hyprland/window"
+        ],
+        "orientation": "inherit"
+    },
+    "group/pill#center": {
+        "orientation": "inherit",
+        "modules": [
+            "custom/hyprsunset",
+            "idle_inhibitor",
+            "clock",
+            "custom/weather"
+        ]
+    },
+    "group/pill#right1": {
+        "modules": [
+            "custom/cliphist",
+            "hyprland/language",
+            "custom/keybindhint",
+            "pulseaudio",
+            "pulseaudio#microphone"
+        ],
+        "orientation": "inherit"
+    },
+    "group/pill#right2": {
+        "modules": [
+            "privacy",
+            "tray"
+        ],
+        "orientation": "inherit"
+    },
+    "group/pill#right3": {
+        "orientation": "inherit",
+        "modules": [
+            "cpu",
+            "memory",
+            "custom/cpuinfo",
+            "custom/gpuinfo",
+            "custom/updates",
+            "custom/wallchange",
+            "custom/theme",
+            "custom/hyde-menu",
+            "custom/power"
+        ]
+    }
+}
