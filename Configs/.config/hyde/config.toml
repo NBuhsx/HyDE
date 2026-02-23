@@ -1,4 +1,73 @@
 # Configuration file for HyDE
 # Environment variables should be on top
 # Updated config.toml file can be found at $HOME/.local/share/hyde/config.toml
-"$schema" = "https://raw.githubusercontent.com/HyDE-Project/HyDE/refs/heads/master/Configs/.local/share/hyde/schema/config.toml.json"
+
+# batterynotify.sh configuration.
+[battery.notify]
+timer = 120  # Timer for battery notifications.
+notify = 1140  # Notification threshold.
+interval = 5  # Interval for battery notifications.
+dock = false  # Dock status for battery notifications.
+# Thresholds for battery notifications.
+[battery.notify.threshold]
+full = 90  # Full battery threshold.
+critical = 10  # Critical battery threshold.
+low = 20  # Low battery threshold.
+unplug = 100  # Unplug battery threshold.
+
+# Commands to execute for battery notifications.
+[battery.notify.execute]
+unplug = ""  # Command to execute when unplugged.
+low = ""  # Command to execute when battery is low.
+critical = "systemctl suspend"  # Command to execute when battery is critical.
+charging = ""  # Command to execute when charging.
+discharging = ""  # Command to execute when discharging.
+
+
+# volumecontrol.sh configuration.
+[volume]
+notify = true  # Enable notifications for volume control.
+steps = 5  # Number of steps to increase/decrease volume.
+boost = false  # Enable volume boost.
+boost_limit = 120  # Volume boost limit.
+
+
+[weather]
+temperature_unit = "c"  # Temperature unit ('c' or 'f').
+time_format = "24h"  # Time format ('12h' or '24h').
+windspeed_unit = "km/h"  # Windspeed unit ('km/h' or 'mph').
+show_icon = true  # Show the weather icon in waybar.
+show_location = true  # Show the location in waybar.
+show_today = true  # Show detailed description of today in tooltip.
+forecast_days = 3  # Number of days to show forecast (0-3).
+location = "Tula"  # Location/coordinates string for the weather output.
+
+# brightnesscontrol.sh configuration.
+[brightness]
+notify = true  # Enable notifications for brightness control.
+steps = 5  # Number of steps to increase/decrease brightness.
+
+# Hyprland configuration.
+[hyprland]
+browser = "zen-browser"  # Browser.
+editor = "micro"  # Editor.
+explorer = "dolphin"  # File manager.
+idle = "hypridle"  # Idle manager.
+lockscreen = "lockscreen.sh"  # Lockscreen.
+terminal = "ghostty"  # Terminal.
+quickapps = "ghostty"  # Quick apps.
+bar = "waybar"  # Bar.
+color_scheme = "prefer-dark"  # Color scheme.
+gtk_theme = "Wallbash-Gtk"  # GTK theme.
+icon_theme = "Tela-circle-dracula"  # Icon theme.
+cursor_size = 24  # Cursor size.
+cursor_theme = "Bibata-Modern-Ice"  # Cursor theme.
+button_layout = ""  # Button layout. (gtk only)
+document_font_size = 10  # Document font size.
+font = "Canterell"  # Font.
+font_antialiasing = "rgba"  # Font antialiasing.
+font_hinting = "full"  # Font hinting.
+font_size = 10  # Font size.
+monospace_font = "CaskaydiaCove Nerd Font Mono"  # Monospace font.
+monospace_font_size = 9  # Monospace font size.
+background_path = ""  # LockScreen's Background path.
